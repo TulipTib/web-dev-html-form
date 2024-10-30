@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(34, 29, 29);
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    margin: 20rem auto;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+}
