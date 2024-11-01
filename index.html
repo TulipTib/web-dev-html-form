@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Passion+One&family=Roboto:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
     <title>HTML Forms</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form action="/" method="GET">
-        <label for="username">User Name</label>
+        <label for="username">User name</label>
         <input type="text" name="user-name" id="username"/>
+        <label for="useremail">User email</label>
+        <input type="email" name="user-email" id="useremail" />
+        <label for="userpassword">User password</label>
+        <input type="password" name="user-password" id="userpassword"/>
+        <label for="userage">User age</label>
+        <input type="number" name="user-age" id="userage" />
+        <label for="userbirthdate">User birthdate</label>
+        <input type="date" name="user-birthdate" id="userbirthdate" />
         <button>Submit</button>
     </form>
 </body>
