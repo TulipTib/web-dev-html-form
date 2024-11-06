@@ -6,7 +6,7 @@ body {
 form {
     background-color: rgb(255, 255, 255);
     width: 30rem;
-    margin: 20rem auto;
+    margin: 0 auto;
     padding: 2rem;
     border-radius: 6px;
 }
@@ -17,17 +17,31 @@ label {
     font: inherit;
 }
 
-input {
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea,select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    border: 1px solid rgb(184, 184, 184);
     font: inherit;
     padding: 0.25rem;
-    border-radius: 4px;
+    color: rgb(61, 58, 58);
 }
 
-input:focus {
+input:focus, textarea:focus {
     border-color: gray;
 }
 
