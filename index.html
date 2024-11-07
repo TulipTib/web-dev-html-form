@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Passion+One&family=Roboto:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Passion+One&family=Roboto:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>HTML Forms</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Form Demo</h1>
+      <h1><a href="/index.html">Form Demo</a></h1>
     </header>
     <main>
-        <form action="/" method="GET">
-            <section>
-                <h2>Your personal information</h2>
-                <ul>
-                    <li>
-                        <label for="username">Your name</label>
-                        <input type="text" name="user-name" id="username" />
-                    </li>
-                    <li>
-                        <label for="useremail">Your email</label>
-                        <input type="email" name="user-email" id="useremail" />
-                    </li>
-                    <li>
-                        <label for="userpassword">Your password</label>
-                        <input type="password" name="user-password" id="userpassword" />
-                    </li>
-                </ul>
-            </section>
+      <form action="/" method="GET">
+        <section>
+          <h2>Your personal information</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your email</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="userpassword">Your password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="7"
+              />
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2>More details</h2>
-                <ul>
-                    <li>
-                        <label for="userage">Your age</label>
-                        <input type="number" name="user-age" id="userage" />
-                    </li>
-                    <li>
-                        <label for="userbirthdate">Your birthdate</label>
-                        <input type="date" name="user-birthdate" id="userbirthdate" />
-                    </li>
-                    <li>
-                        <label for="your-gender">Please specify your gender</label>
-                        <select name="gender" id="your-gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </li>
-                </ul>
+        <section>
+          <h2>More details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input
+                type="number"
+                name="user-age"
+                id="userage"
+                required
+                min="18"
+                max="100"
+              />
+            </li>
+            <li>
+              <label for="userbirthdate">Your birthdate</label>
+              <input
+                type="date"
+                name="user-birthdate"
+                id="userbirthdate"
+                required
+                min="1921-01-01"
+              />
+            </li>
+            <li>
+              <label for="your-gender">Please specify your gender</label>
+              <select name="gender" id="your-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
 
-            </section>
+        <section>
+          <h2>How should we verify your account?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                value="text-message"
+                required
+              />
+              <label for="verify-text-message">Via a text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+                required
+              />
+              <label for="verify-phone">Via a phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+                required
+              />
+              <label for="verify-email">Via an email</label>
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2>How should we contact you?</h2>
-                <ul>
-                    <li class="form-control-inline">
-                        <input type="checkbox" id="contact-phone" name="contact" value="phone">
-                        <label for="contact-phone">Contact me via phone</label>
-                    </li>
-                    <li class="form-control-inline">
-                        <input type="checkbox" id="contact-email" name="contact" value="email">
-                        <label for="contact-email">Contact me via email</label>
-                    </li>
-                </ul>
-            </section>
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">Contact me via phone</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">Contact me via email</label>
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2>How should we verify your account?</h2>
-                <ul>
-                    <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-text-message" value="text-message" />
-                        <label for="verify-text-message">Via a text message (SMS)</label>
-                    </li>
-                    <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-phone" value="phone" />
-                        <label for="verify-phone">Via a phone call</label>
-                    </li>
-                    <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-email" value="email" />
-                        <label for="verify-email">Via an email</label>
-                    </li>
-                </ul>
-            </section>
+        <section>
+          <h2>Your comment</h2>
+          <label for="usermessage">Your message</label>
+          <textarea id="usermessage" name="user-message" rows="8"></textarea>
+        </section>
 
-            <section>
-                <h2>Your comment</h2>
-                <label for="usermessage">Your message</label>
-                <textarea id="usermessage" name="user-message"></textarea>
-            </section>
+        <hr />
 
-            <hr>
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="contact-terms" name="terms" />
+            <label for="contact-terms">Agree to Terms?</label>
+          </div>
+        </section>
 
-            <section>
-                <div class="form-control-inline">
-                    <input type="checkbox" id="contact-terms" name="terms">
-                    <label for="contact-terms">Agree to Terms?</label>
-                </div>
-            </section>
-
-            <section>
-                <button>Submit</button>
-            </section>
-
-        </form>
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
     </main>
-</body>
-
+  </body>
 </html>

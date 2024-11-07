@@ -1,71 +1,81 @@
 body {
-    background-color: rgb(34, 29, 29);
-    font-family: "Roboto", sans-serif;
+  background-color: rgb(34, 29, 29);
+  font-family: "Roboto", sans-serif;
 }
 
 form {
-    background-color: rgb(255, 255, 255);
-    width: 30rem;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 6px;
 }
 
 label {
-    margin-bottom: 0.5rem;
-    display: block;
-    font: inherit;
+  margin-bottom: 0.5rem;
+  display: block;
+  font: inherit;
 }
 
-h1 {
-    text-align: center;
-    color: white;
+header {
+  text-align: center;
 }
 
-
+header a {
+  text-decoration: none;
+  color: white;
+}
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-input, textarea,select {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    border: 1px solid rgb(184, 184, 184);
-    font: inherit;
-    padding: 0.25rem;
-    color: rgb(61, 58, 58);
+textarea {
+  resize: vertical;
 }
 
-input:focus, textarea:focus {
-    border-color: gray;
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  font: inherit;
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+}
+
+input:focus,
+textarea:focus {
+  border-color: gray;
+  background-color: rgb(235, 226, 238);
 }
 
 button {
-    display: block;
-    font: inherit;
-    background-color: rgb(32, 5, 63);
-    color: white;
-    border: 1px solid rgb(32, 5, 63);
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
+  display: block;
+  font: inherit;
+  background-color: rgb(32, 5, 63);
+  color: white;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(52, 14, 95);
-    border-color: rgb(52, 14, 95);
+  background-color: rgb(52, 14, 95);
+  border-color: rgb(52, 14, 95);
 }
 
 .form-control-inline {
-    display: flex;
+  display: flex;
 }
 
 .form-control-inline input {
-    width: auto;
-    margin-right: 0.5rem;
+  width: auto;
+  margin-right: 0.5rem;
 }
